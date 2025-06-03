@@ -1,0 +1,40 @@
+[package]
+name = "bellande_rwlock"
+version = "0.1.0"
+edition = "2021"
+authors = ["Bellande Architecture Mechanism Research Innovation Center (BAMRI) <ronaldsonbellande@gmail.com>", "Ronaldson Bellande"]
+description = """
+A custom Read-Write Lock implementation developed by the Bellande Architecture Mechanism Research Innovation Center.
+Offers tools and utilities for concurrent read and write access to shared data.
+"""
+
+# Repository Information
+repository = "https://github.com/Architecture-Mechanism/bellande_rwlock"
+companypage = "https://git.bellande-technologies.com/BAMRI/bellande_rwlock"
+homepage = "https://github.com/Architecture-Mechanism/bellande_rwlock"
+
+# License Information
+license = "GPL-3.0-or-later"
+license-file = "LICENSE"
+
+# Keywords and Categories
+keywords = ["concurrency", "lock", "rwlock", "synchronization", "threading"]
+categories = ["concurrency", "asynchronous", "data-structures"]
+
+# Package Metadata
+readme = "README.md"
+include = [
+    "src/**/*",
+    "Cargo.toml",
+    "LICENSE",
+    "README.md",
+    "CHANGELOG.md",
+    "CODE_OF_CONDUCT.md",
+    "CONTRIBUTING.md"
+]
+
+[lib]
+name = "bellande_rwlock"
+path = "src/bellande_rwlock.rs"
+
+[dependencies]
